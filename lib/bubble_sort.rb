@@ -6,13 +6,13 @@ def bubble_sort(arr)
   return arr if arr.length < 2
 
   sorted = false
-  until sorted do
+  until sorted
     sorted = true
     i = 1
-    while i < arr.length do
-      if arr[i-1] > arr[i]
+    while i < arr.length
+      if arr[i - 1] > arr[i]
         sorted = false
-        arr[i-1], arr[i] = arr[i], arr[i-1]
+        arr[i - 1], arr[i] = arr[i], arr[i - 1]
       end
 
       i += 1

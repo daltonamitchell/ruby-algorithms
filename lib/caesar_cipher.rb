@@ -18,9 +18,7 @@
 # 'z' having code 122.
 
 def caesar_cipher(offset, string)
-  # letters = string.split ''
-  # letters.map
-  output = ""
+  output = ''
   string.each_codepoint do |char|
     if char < 97 || char > 122
       output << char.chr

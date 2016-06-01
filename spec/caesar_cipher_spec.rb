@@ -17,18 +17,18 @@
 # Notice that the letter 'a' has code 97, 'b' has code 98, etc., up to
 # 'z' having code 122.
 
-require "caesar_cipher"
+require 'caesar_cipher'
 
-describe "#caesar_cipher" do
-  it "converts a single letter" do
+describe '#caesar_cipher' do
+  it 'converts a single letter' do
     expect(caesar_cipher(2, 'a')).to eq('c')
   end
 
-  it "converts a simple string" do
+  it 'converts a simple string' do
     expect(caesar_cipher(3, 'abc')).to eq('def')
   end
 
-  it "converts a complex string" do
+  it 'converts a complex string' do
     original = 'the quick brown fox jumps over the lazy dog'
     expected = 'ymj vznhp gwtbs ktc ozrux tajw ymj qfed itl'
     expect(caesar_cipher(5, original)).to eq(expected)
