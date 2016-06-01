@@ -1,3 +1,5 @@
+# inherit_from: ./.rubocop_todo.yml
+
 Metrics/AbcSize:
   Enabled: false
 
@@ -7,3 +9,7 @@ Metrics/MethodLength:
 Style/BlockComments:
   Exclude:
     - 'spec/spec_helper.rb'
+
+Lint/HandleExceptions:
+  Exclude:
+    - 'Rakefile'

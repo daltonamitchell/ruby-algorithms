@@ -12,7 +12,7 @@ Follow these steps to get started:
 
 1. Clone this repo
 2. Run `bundle install` to install the dependencies. You can find out more about gems and bundler [here](https://rubygems.org/pages/download) and [here](http://bundler.io).
-3. Run `bundle exec rspec` to run the tests. You can also run linting with `bundle exec rubocop`
+3. Run `bundle exec rake` to lint code and run the tests. Alternatively, `rake spec` or `rake lint` will run each of these tasks separately. 
 4. All tests are in the spec directory and solutions are located in lib.
 5. Once you understand whats going on, remove the solution code and try to get it working again on your own.
 6. Go forth and conquer!
