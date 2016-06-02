@@ -13,3 +13,6 @@ Style/BlockComments:
 Lint/HandleExceptions:
   Exclude:
     - 'Rakefile'
+
+Metrics/CyclomaticComplexity:
+  Max: 7
