@@ -79,7 +79,7 @@ describe 'fizz_buzz' do
       actual = fizz_buzz start: -5
       expected = ['Buzz', -4, 'Fizz', -2, -1]
       expect(actual.length).to eq(106)
-      expect(actual.slice(0, 5)).to eq(expected)
+      expect(actual[0, 5]).to eq(expected)
     end
   end
 
