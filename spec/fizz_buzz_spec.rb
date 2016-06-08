@@ -14,10 +14,6 @@
 require 'fizz_buzz'
 
 describe 'fizz_buzz' do
-  it 'returns an array' do
-    expect(fizz_buzz).to be_a(Array)
-  end
-
   context 'when no parameters are given' do
     it 'outputs 100 items' do
       expect(fizz_buzz.length).to eq(100)
