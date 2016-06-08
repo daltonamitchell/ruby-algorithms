@@ -12,7 +12,7 @@ end
 def longest_palindrome(str)
   return str if palindrome? str
 
-  max_len = str.length - 2
+  max_len = str.length - 1
   while max_len > 0
     i = 0
     while (i + max_len) <= str.length

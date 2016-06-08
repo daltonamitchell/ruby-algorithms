@@ -45,4 +45,9 @@ describe 'longest_palindrome' do
     # rubocop: enable Metrics/LineLength
     expect(longest_palindrome(really_long_string)).to eq(expected)
   end
+
+  it 'finds a palindrome only one char less than the string' do
+    expect(longest_palindrome('amom')).to eq('mom')
+    expect(longest_palindrome('aibohphobiaz')).to eq('aibohphobia')
+  end
 end
