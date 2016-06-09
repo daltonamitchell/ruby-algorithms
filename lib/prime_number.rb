@@ -13,16 +13,12 @@ def prime?(num)
 
   return true if num < 4
 
-  i = 2
+  i = 1
   while i <= Math.sqrt(num)
-    if i.even? && i > 2
-      i += 1
-      next
-    end
+    i += 1
+    next if even_above_two(i)
 
     return false if num % i == 0
-
-    i += 1
   end
 
   true
@@ -34,9 +30,14 @@ def nth_prime(num)
 
   while checked < num
     i += 1
+    next if even_above_two(i)
 
     checked += 1 if prime? i
   end
 
   i
+end
+
+def even_above_two(num)
+  num.even? && num > 2
 end
